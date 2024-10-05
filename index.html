@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran Academy | Student Progress Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Progress Form</h1>
+    <form id="teacherForm">
+      <!-- Teacher Information -->
+      <div class="form-group">
+        <label for="teacher_name">Teacher Name:</label>
+        <input type="text" id="teacher_name" name="teacher_name" placeholder="Enter Teacher Name" required>
+      </div>
+
+      <!-- Number of Students -->
+      <div class="form-group">
+        <label for="student_count">Number of Students:</label>
+        <select id="student_count" name="student_count" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <!-- Dynamic Student Forms -->
+      <div id="studentsForms"></div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
